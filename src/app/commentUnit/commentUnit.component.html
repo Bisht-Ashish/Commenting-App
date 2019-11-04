@@ -1,0 +1,27 @@
+<div class="comments-marker">
+    <div id="comments-list" class="comments-list" *ngFor="let each of comments">
+        <div class="comment-box">
+            <div class="comment-head">
+                <div class="comment-author">{{each.userName}}</div>
+                <div class="comment-time">{{each.timeStamp}}</div>
+            </div>
+            <div class="comment-content" *ngIf="each.id != service.editCommentId">
+                {{each.comment}}
+            </div>
+            <div *ngIf="each.id == service.editCommentId">
+                <input type="text" [(ngModel)]="edittedComment">
+            </div>
+        </div>
+        <div class='comment-action' *ngIf="each.id != service.editCommentId">
+            <button (click)="editComment(each)" *ngIf="service.userName === each.userName">Edit</button>
+            <button (click)="replyComment(each)">Reply</button>
+        </div>
+        <div class='comment-action' *ngIf="each.id == service.editCommentId">
+                <button (click)="saveEdittedComment(each)">OK</button>
+                <button (click)="cancelEdit(each)">Cancel</button>
+        </div>
+        <div  *ngIf="each.children.length>0" class="childComment">
+            <comment-unit [comments]="each.children"></comment-unit>
+        </div>
+    </div>
+</div>

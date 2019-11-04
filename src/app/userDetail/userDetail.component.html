@@ -1,0 +1,8 @@
+<div class="userDetail">
+    <h2>Enter User Name: </h2>
+    <input type="text" [(ngModel)]="userName"/>
+    <button class="submit" (click)="submit()">Enter</button>
+</div>
+<div class="errorMessage" *ngIf="errorMessage">
+     Username required
+</div>

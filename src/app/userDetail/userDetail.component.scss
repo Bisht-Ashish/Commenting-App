@@ -1,0 +1,26 @@
+.userDetail{
+    margin: 20px;
+    display: flex;
+}
+input{
+    margin: 15px;
+    height: 30px;
+    width: 200px;
+}
+.submit{
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    background-color: green;
+    border-radius: 10px; 
+    margin: 15px;
+    border: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.errorMessage{
+    color: red;
+    margin-left: 20px;
+    font-weight: bold;  
+}

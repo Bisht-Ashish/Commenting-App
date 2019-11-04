@@ -1,0 +1,8 @@
+<button (click)="changeUser()" class="changeUser"> Go back to change User </button>
+<div class="comments-container">
+    <div class="comments-input">
+            <input type="text" [(ngModel)]="newComment"/>
+            <button (click)="enterComment()" class="submitButton"> Submit </button>
+    </div>
+    <comment-unit [comments]="service.comments" *ngIf="service.comments.length > 0 && service.comments[0].children"></comment-unit>
+</div>

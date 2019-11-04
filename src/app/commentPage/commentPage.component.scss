@@ -1,0 +1,37 @@
+.changeUser{
+    height: 30px;
+    width: 200px;
+    font-weight: bold;
+    background-color: green;
+    border-radius: 10px; 
+    margin: 15px;
+    border: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}
+.comments-container{
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    max-width: 450px;
+}
+.comments-input{
+    display: flex;
+    input{
+        width: 300px;
+        height: 50px;
+    }
+}
+.submitButton{
+    height: 30px;
+    width: 100px;
+    font-weight: bold;
+    background-color: goldenrod;
+    border-radius: 10px; 
+    margin: 15px;
+    border: transparent;
+    color: white;
+    outline: none;
+    cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.comments-list{
+    margin-top: 10px;
+    .comment-box{
+        border: 1px solid #ccc;
+        .comment-head{
+            display: flex;
+            background-color: #ccc;
+            padding: 5px;
+            .comment-author{
+                flex: 1;
+                font-weight: bold   
+            }
+            .comment-time{
+                justify-content: flex-end;
+            }
+        }
+        .comment-content{
+            padding: 5px;
+        }
+    }
+    .comment-action{
+        display: flex;
+        padding: 5px;
+        margin-left: 10px;
+        button{
+            margin-right: 5px;
+            height: 25px;
+            width: 50px;
+            background-color: goldenrod;
+            border: transparent;
+            color: white;
+            outline: none;
+            cursor: pointer;
+        }
+    }
+    .childComment{
+        margin-left: 15px;
+    }
+}
+// .comments-marker{
+//     border-left: 2px dashed #ccc;
+// }
